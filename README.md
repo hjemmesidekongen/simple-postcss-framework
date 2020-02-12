@@ -11,7 +11,7 @@ https://simple-postcss-framework.hjemmesidekongen.dk/
 
 ## Installation and usage
 
-## Installation
+### Installation
 `npm install simple-postcss-framework`
 
 `yarn add simple-postcss-framework`
