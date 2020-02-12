@@ -3,6 +3,6 @@
   "status": "prototype",
   "context": {
     "text": "A link text",
-    "url": "https://example.com"
+    "url": "#"
   }
 }
