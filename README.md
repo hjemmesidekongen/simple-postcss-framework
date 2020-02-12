@@ -9,6 +9,29 @@ https://simple-postcss-framework.hjemmesidekongen.dk/
 - buttons
 - typography (paragraph, link and headings)
 
+## Installation and usage
+
+## Installation
+`npm install simple-postcss-framework`
+
+`yarn add simple-postcss-framework`
+
+### Import into existing project
+You can import this project with the following:
+
+`@import "../node_modules/simple-postcss-framework/styleguide/stylesheet.css"`
+
+This is depending on the path to your "node_modules" folder.
+
+### Override variables
+Copy "variables.css"-file from "styleguide/variables.css" to your project and override the variables. You can also create an empty file and just override single variables like:
+
+`
+:root {
+    --base__line-height: 1.5;
+}
+`
+
 ## Why did @hjemmesidekongen create this framework?
 Basically almost all frameworks are bloated. 
 
