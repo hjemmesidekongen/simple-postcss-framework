@@ -1,5 +1,6 @@
 {
-  "private": true,
+  "name": "simple-postcss-framework",
+  "version": "1.0.0",
   "scripts": {
     "dev": "npm run development",
     "development": "cross-env NODE_ENV=development gulp build",
@@ -36,5 +37,12 @@
   "devDependencies": {},
   "cssnano": {
     "preset": "advanced"
-  }
+  },
+  "homepage": "https://simple-postcss-framework.hjemmesidekongen.dk/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjemmesidekongen/simple-postcss-framework.git"
+  },
+  "author": "Morten Nissen <mail@hjemmesidekongen.dk>",
+  "license": "MIT"
 }
