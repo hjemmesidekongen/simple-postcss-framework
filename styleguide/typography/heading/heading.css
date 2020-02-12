@@ -1,0 +1,37 @@
+.heading,
+h1, h2, h3, h4, h5, h6 {
+    line-height: var(--heading__line-height);
+
+    font-family: var(--heading__font-family);
+    color: var(--heading__text-color);
+}
+
+h1,
+.heading--h1 {
+    font-size: var(--heading--h1__font-size);
+}
+
+h2,
+.heading--h2 {
+    font-size: var(--heading--h2__font-size);
+}
+
+h3,
+.heading--h3 {
+    font-size: var(--heading--h3__font-size);
+}
+
+h4,
+.heading--h4 {
+    font-size: var(--heading--h4__font-size);
+}
+
+h5,
+.heading--h5 {
+    font-size: var(--heading--h5__font-size);
+}
+
+h6,
+.heading--h6 {
+    font-size: var(--heading--h6__font-size);
+}

@@ -1,0 +1,10 @@
+a {
+    color: var(--link__text-color);
+
+    transition: color var(--transition__time) var(--transition--easeInOutSine);
+
+    &:hover,
+    &:active {
+        color: var(--link--hover__text-color);
+    }
+}

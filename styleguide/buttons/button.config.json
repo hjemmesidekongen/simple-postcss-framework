@@ -1,0 +1,40 @@
+{
+  "title": "Button",
+  "status": "prototype",
+  "context": {
+    "text": "Light color"
+  },
+  "variants": [
+    {
+      "name": "link",
+      "context": {
+        "text": "Link button",
+        "url": "https://example.com"
+      }
+    },
+    {
+      "name": "submit",
+      "context": {
+        "text": "Submit type"
+      }
+    },
+    {
+      "name": "primary",
+      "context": {
+        "text": "Primary color"
+      }
+    },
+    {
+      "name": "secondary",
+      "context": {
+        "text": "Secondary color"
+      }
+    },
+    {
+      "name": "tertiary",
+      "context": {
+        "text": "Tertiary color"
+      }
+    }
+  ]
+}

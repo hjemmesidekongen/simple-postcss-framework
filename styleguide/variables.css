@@ -1,0 +1,205 @@
+/**
+ * Typography.
+ */
+:root {
+    --base__font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    --base__line-height: 1.5;
+
+    --base__font-size: 1rem;
+    --base--small__font-size: .875rem;
+    --base--large__font-size: 1.25rem;
+
+    /* Headings. */
+    --heading__font-family: inherit;
+
+    --heading__line-height: 1.2;
+
+    --heading--h1__font-size: 2.5rem;
+    --heading--h2__font-size: 2rem;
+    --heading--h3__font-size: 1.75rem;
+    --heading--h4__font-size: 1.5rem;
+    --heading--h5__font-size: 1.25rem;
+    --heading--h6__font-size: 1rem;
+}
+
+/**
+ * Colors.
+ */
+:root {
+
+    /* Typography. */
+    --heading__text-color: var(--text-color);
+    --text-color: #222;
+    --link__text-color: var(--color--primary);
+    --link--hover__text-color: color(var(--link__text-color) shade(10%));
+
+    /* Brand. */
+    --color--primary: #007bff;
+    --color--secondary: #fd7e14;
+    --color--tertiary: #28a745;
+
+    /* State. */
+    --state--light__color: #fff;
+    --state--light__text-color: var(--text-color);
+    --state--light__border-color: color(var(--state--light__color) shade(10%));
+    --state--light--hover__color: color(var(--state--light__color) shade(15%));
+    --state--light--hover__text-color: var(--state--light__text-color);
+    --state--light--hover__border-color: color(var(--state--light--hover__color) shade(10%));
+
+    --state--primary__color: var(--color--primary);
+    --state--primary__text-color: #fff;
+    --state--primary__border-color: color(var(--state--primary__color) shade(10%));
+    --state--primary--hover__color: color(var(--color--primary) shade(10%));
+    --state--primary--hover__text-color: #fff;
+    --state--primary--hover__border-color: color(var(--state--primary--hover__color) shade(10%));
+
+    --state--secondary__color: var(--color--secondary);
+    --state--secondary__text-color: #fff;
+    --state--secondary__border-color: color(var(--state--secondary__color) shade(10%));
+    --state--secondary--hover__color: color(var(--color--secondary) shade(15%));
+    --state--secondary--hover__text-color: #fff;
+    --state--secondary--hover__border-color: color(var(--state--secondary--hover__color) shade(10%));
+
+    --state--tertiary__color: var(--color--tertiary);
+    --state--tertiary__text-color: #fff;
+    --state--tertiary__border-color: color(var(--state--tertiary__color) shade(10%));
+    --state--tertiary--hover__color: color(var(--color--tertiary) shade(15%));
+    --state--tertiary--hover__text-color: #fff;
+    --state--tertiary--hover__border-color: color(var(--state--tertiary--hover__color) shade(10%));
+}
+
+:root {
+    --focus-width: .2rem;
+}
+
+/**
+ * Border.
+ */
+:root {
+    --border--base__radius: 3px;
+    --border--small__radius: 2px;
+    --border--large__radius: 5px;
+}
+
+/*
+ * Spacings.
+ */
+:root {
+    --spacing--base__y: .375rem;
+    --spacing--base__x: .75rem;
+
+    --spacing--small__y: .25rem;
+    --spacing--small__x: .5rem;
+
+    --spacing--large__y: .5rem;
+    --spacing--large__x: 1rem;
+}
+
+/*
+ * Grid.
+ */
+:root {
+    --gutter-width: 30px;
+
+    /* Breakpoints. */
+    --breakpoint--xs: 0;
+    --breakpoint--sm: 576px;
+    --breakpoint--md: 768px;
+    --breakpoint--lg: 992px;
+    --breakpoint--xl: 1200px;
+
+    /* Max width. */
+    --container--sm__max-width: 540px;
+    --container--md__max-width: 720px;
+    --container--lg__max-width: 960px;
+    --container--xl__max-width: 1140px;
+}
+
+/*
+ * Custom media queries.
+ */
+@custom-media --viewport--xs__min (min-width: 0);
+@custom-media --viewport--xs__max (max-width: 575px);
+@custom-media --viewport--xs__only (max-width: 575px);
+
+/* Small screen / tablet*/
+@custom-media --viewport--sm__min (min-width: 576px);
+@custom-media --viewport--sm__max (max-width: 767px);
+@custom-media --viewport--sm__only (min-width: 576px) and (max-width: 767px);
+
+/* Medium screen / desktop*/
+@custom-media --viewport--md__min (min-width: 768px);
+@custom-media --viewport--md__max (max-width: 991px);
+@custom-media --viewport--md__only (min-width: 768px) and (max-width: 991px);
+
+/* Large screen / wide desktop*/
+@custom-media --viewport--lg__min (min-width: 992px);
+@custom-media --viewport--lg__max (max-width: 1139px);
+@custom-media --viewport--lg__only (min-width: 992px) and (max-width: 1139px);
+
+/* X Large screen / X wide desktop*/
+@custom-media --viewport--xl__min (min-width: 1140px);
+
+/*
+ * Transitions.
+ */
+:root {
+    --transition__time: .2s;
+
+    --transition--easeInQuad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    /*http://easings.net/#easeInQuad*/
+    --transition--easeOutQuad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    /*http://easings.net/#easeOutQuad*/
+    --transition--easeInOutQuad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    /*http://easings.net/#easeInOutQuad*/
+
+    --transition--easeInSine: cubic-bezier(0.47, 0, 0.745, 0.715);
+    /*http://easings.net/#easeInSine*/
+    --transition--easeOutSine: cubic-bezier(0.39, 0.575, 0.565, 1);
+    /*http://easings.net/#easeOutSine*/
+    --transition--easeInOutSine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    /*http://easings.net/#easeInOutSine*/
+
+    --transition--easeInCubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    /*http://easings.net/#easeInCubic*/
+    --transition--easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+    /*http://easings.net/#easeOutCubic*/
+    --transition--easeInOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+    /*http://easings.net/#easeInOutCubic*/
+
+    --transition--easeInQuart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    /*http://easings.net/#easeInQuart*/
+    --transition--easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
+    /*http://easings.net/#easeOutQuart*/
+    --transition--easeInOutQuart: cubic-bezier(0.77, 0, 0.175, 1);
+    /*http://easings.net/#easeInOutQuart*/
+
+    --transition--easeInQuint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    /*http://easings.net/#easeInQuint*/
+    --transition--easeOutQuint: cubic-bezier(0.23, 1, 0.32, 1);
+    /*http://easings.net/#easeOutQuint*/
+    --transition--easeInOutQuint: cubic-bezier(0.86, 0, 0.07, 1);
+    /*http://easings.net/#easeInOutQuint*/
+
+    --transition--easeInExpo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    /*http://easings.net/#easeInExpo*/
+    --transition--easeOutExpo: cubic-bezier(0.19, 1, 0.22, 1);
+    /*http://easings.net/#easeOutExpo*/
+    --transition--easeInOutExpo: cubic-bezier(1, 0, 0, 1);
+    /*http://easings.net/#easeInOutExpo*/
+
+    --transition--easeInCirc: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    /*http://easings.net/#easeInCirc*/
+    --transition--easeOutCirc: cubic-bezier(0.075, 0.82, 0.165, 1);
+    /*http://easings.net/#easeOutCirc*/
+    --transition--easeInOutCirc: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    /*http://easings.net/#easeInOutCirc*/
+
+    --transition--easeInBack: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    /*http://easings.net/#easeInBack*/
+    --transition--easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /*http://easings.net/#easeOutBack*/
+    --transition--easeInOutBack: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /*http://easings.net/#easeInOutBack*/
+}

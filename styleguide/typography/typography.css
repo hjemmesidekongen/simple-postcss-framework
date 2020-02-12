@@ -1,0 +1,16 @@
+@import "heading/heading.css";
+@import "link/link.css";
+@import "paragraph/paragraph.css";
+
+body {
+    line-height: var(--base__line-height);
+
+    font-family: var(--base__font-family);
+    font-size: var(--base__font-size);
+    color: var(--text-color);
+}
+
+.small,
+small {
+    font-size: var(--base--small__font-size);
+}
