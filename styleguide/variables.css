@@ -28,6 +28,10 @@
  */
 :root {
 
+    /* Background. */
+    --body-bg--primary__color: #fff;
+    --body-bg--secondary__color: #f5f5f5;
+
     /* Typography. */
     --heading__text-color: var(--text-color);
     --text-color: #222;
