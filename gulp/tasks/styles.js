@@ -42,7 +42,7 @@ const plugins = [
   }),
   reporter({
     clearMessages: true,
-    throwError: true,
+    throwError: false,
   }),
 ];
 
