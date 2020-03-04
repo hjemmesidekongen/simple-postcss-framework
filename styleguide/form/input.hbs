@@ -3,5 +3,10 @@
         {{ label }}
     </label>
 
-    <input class="form-input" name="my-input" id="myTextInput" placeholder="{{ placeholder }}" />
+    <input class="form-input" name="my-input" id="myTextInput" placeholder="{{ placeholder }}"
+        aria-describedby="inputHelpBlock" />
+
+    <small id="inputHelpBlock" class="form-text text--light">
+        {{ help_text }}
+    </small>
 </div>

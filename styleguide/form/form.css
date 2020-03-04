@@ -76,3 +76,9 @@ textarea {
         margin-bottom: 1rem;
     }
 }
+
+.form-text {
+    display: block;
+
+    margin-top: .25rem;
+}

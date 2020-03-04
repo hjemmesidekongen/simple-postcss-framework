@@ -48,7 +48,9 @@
 
     /* Typography. */
     --heading__text-color: var(--text-color);
+    --text-color--light: #6c757d;
     --text-color: #222;
+    --text-color--dark: #000;
     --link__text-color: var(--color--primary);
     --link--hover__text-color: color(var(--link__text-color) shade(10%));
 
