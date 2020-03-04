@@ -1,0 +1,78 @@
+.form-input {
+    display: block;
+
+    width: 100%;
+    height: var(--form-input__height);
+
+    padding: var(--spacing--base__y) var(--spacing--base__x);
+
+    font-family: var(--base__font-family);
+    font-size: var(--base__font-size);
+    line-height: var(--base__line-height);
+
+    border-width: 1px;
+    border-style: solid;
+    border-radius: var(--border--base__radius);
+    border-color: var(--form-input__border-color);
+
+    transition: border var(--transition__time) var(--transition--easeInOutSine), box-shadow var(--transition__time) var(--transition--easeInOutSine);
+
+    background-clip: padding-box;
+
+    color: var(--form-input__text-color);
+    background-color: var(--form-input__background-color);
+
+    &:focus {
+        outline: 0;
+
+        border-color: var(--form-input__border-color--focus);
+        box-shadow: 0 0 0 var(--focus-width) rgba(var(--form-input__border-color--focus), .25);
+    }
+
+    /* Unstyle the caret on `<select>`s in IE10+. */
+    &::-ms-expand {
+        border: 0;
+
+        background-color: transparent;
+    }
+
+    /* Remove select outline from select box in FF */
+    &:-moz-focusring {
+        text-shadow: 0 0 0 var(--text-color);
+
+        color: transparent;
+    }
+
+    /* Placeholder */
+    &::placeholder {
+        opacity: 1;
+
+        color: var(--form-input__placeholder-color);
+    }
+
+    &:disabled,
+    &[readonly] {
+        opacity: 1;
+
+        background-color: var(--form-input__disabled-background-color);
+    }
+}
+
+select.form-input {
+    &:focus::-ms-value {
+        color: var(--text-color);
+        background-color: var(--form-input__background-color);
+    }
+}
+
+select.form-input {
+    
+    &[size],
+    &[multiple] {
+        height: auto;
+    }
+}
+
+textarea.form-input {
+    height: auto;
+}

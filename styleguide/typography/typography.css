@@ -3,14 +3,16 @@
 @import "paragraph/paragraph.css";
 
 body {
-    line-height: var(--base__line-height);
-
     font-family: var(--base__font-family);
     font-size: var(--base__font-size);
+    font-weight: var(--base__font-weight);
+    line-height: var(--base__line-height);
+    text-align: left;
+
     color: var(--text-color);
 }
 
-.small,
-small {
-    font-size: var(--base--small__font-size);
+b,
+strong {
+    font-weight: var(--base__font-weight--bold);
 }

@@ -1,0 +1,8 @@
+{
+    "title": "Textarea",
+    "status": "prototype",
+    "context": {
+        "label": "My textarea",
+        "placeholder": "Lorem ipsum dolor sit amet."
+    }
+}

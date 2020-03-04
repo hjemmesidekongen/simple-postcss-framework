@@ -1,0 +1,8 @@
+{
+    "title": "Input",
+    "status": "prototype",
+    "context": {
+        "label": "My text input",
+        "placeholder": "Lorem ipsum dolor sit amet."
+    }
+}
