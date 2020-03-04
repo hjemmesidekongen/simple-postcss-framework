@@ -8,6 +8,9 @@ https://simple-postcss-framework.hjemmesidekongen.dk/
 - grid
 - buttons
 - typography (paragraph, link and headings)
+- layout (push footer down)
+- form elements
+- resets for common elements
 
 ## Installation and usage
 
