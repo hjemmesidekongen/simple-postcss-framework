@@ -1,9 +1,23 @@
 .heading,
 h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+    font-weight: var(--heading__font-weight);
+    font-family: var(--heading__font-family);
     line-height: var(--heading__line-height);
 
-    font-family: var(--heading__font-family);
     color: var(--heading__text-color);
+    
+    strong &,
+    strong,
+    &.heading--bold {
+        font-weight: var(--heading__font-weight--bold);
+    }
+    
+    &.heading--light {
+        font-weight: var(--heading__font-weight--light);
+    }
 }
 
 h1,
