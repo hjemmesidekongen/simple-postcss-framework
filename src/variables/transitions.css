@@ -1,0 +1,82 @@
+:root {
+    --transition__time: 0.2s;
+    --transition--easeInQuad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+
+    /* http://easings.net/#easeInQuad */
+    --transition--easeOutQuad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    /* http://easings.net/#easeOutQuad */
+    --transition--easeInOutQuad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+    /* http://easings.net/#easeInOutQuad */
+
+    --transition--easeInSine: cubic-bezier(0.47, 0, 0.745, 0.715);
+
+    /* http://easings.net/#easeInSine */
+    --transition--easeOutSine: cubic-bezier(0.39, 0.575, 0.565, 1);
+
+    /* http://easings.net/#easeOutSine */
+    --transition--easeInOutSine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+    /* http://easings.net/#easeInOutSine */
+
+    --transition--easeInCubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+    /* http://easings.net/#easeInCubic */
+    --transition--easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    /* http://easings.net/#easeOutCubic */
+    --transition--easeInOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    /* http://easings.net/#easeInOutCubic */
+
+    --transition--easeInQuart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+
+    /* http://easings.net/#easeInQuart */
+    --transition--easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    /* http://easings.net/#easeOutQuart */
+    --transition--easeInOutQuart: cubic-bezier(0.77, 0, 0.175, 1);
+
+    /* http://easings.net/#easeInOutQuart */
+
+    --transition--easeInQuint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+
+    /* http://easings.net/#easeInQuint */
+    --transition--easeOutQuint: cubic-bezier(0.23, 1, 0.32, 1);
+
+    /* http://easings.net/#easeOutQuint */
+    --transition--easeInOutQuint: cubic-bezier(0.86, 0, 0.07, 1);
+
+    /* http://easings.net/#easeInOutQuint */
+
+    --transition--easeInExpo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+
+    /* http://easings.net/#easeInExpo */
+    --transition--easeOutExpo: cubic-bezier(0.19, 1, 0.22, 1);
+
+    /* http://easings.net/#easeOutExpo */
+    --transition--easeInOutExpo: cubic-bezier(1, 0, 0, 1);
+
+    /* http://easings.net/#easeInOutExpo */
+
+    --transition--easeInCirc: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+
+    /* http://easings.net/#easeInCirc */
+    --transition--easeOutCirc: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    /* http://easings.net/#easeOutCirc */
+    --transition--easeInOutCirc: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+    /* http://easings.net/#easeInOutCirc */
+
+    --transition--easeInBack: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+
+    /* http://easings.net/#easeInBack */
+    --transition--easeOutBack: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    /* http://easings.net/#easeOutBack */
+    --transition--easeInOutBack: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    /* http://easings.net/#easeInOutBack */
+}

@@ -1,0 +1,5 @@
+:root {
+    --border__radius--base: 0.25rem;
+    --border__radius--small: 2px;
+    --border__radius--large: 5px;
+}

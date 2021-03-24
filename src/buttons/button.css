@@ -1,0 +1,158 @@
+/**
+ * Variables.
+ */
+
+/**
+ * Resets.
+ */
+
+button {
+    border-radius: 0;
+
+    &:focus {
+        outline: 1px dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+    }
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+/**
+ * Styles.
+ */
+.button {
+    display: inline-block;
+    padding: var(--spacing__y--base) var(--spacing__x--base);
+    font-family: var(--base__font-family);
+    font-size: var(--base__font-size);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: var(--border__radius--base);
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    cursor: hand;
+    cursor: pointer;
+    transition: border var(--transition__time) var(--transition--easeInOutSine), color var(--transition__time) var(--transition--easeInOutSine), background-color var(--transition__time) var(--transition--easeInOutSine), box-shadow var(--transition__time) var(--transition--easeInOutSine);
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:focus,
+    &.focus {
+        outline: 0;
+    }
+
+    &.disabled,
+    &:disabled {
+        opacity: 0.65;
+        box-shadow: none;
+    }
+}
+
+/* Link. */
+a.button {
+    text-decoration: none;
+}
+
+/**
+ * Sizes.
+ */
+.button--small {
+    padding: var(--spacing__y--small) var(--spacing__x--small);
+    font-size: var(--base__font-size--small);
+}
+
+.button--large {
+    padding: var(--spacing__y--large) var(--spacing__x--large);
+    font-size: var(--base__font-size--large);
+}
+
+/**
+ * Variants.
+ */
+.button--light {
+    background-color: var(--state-light__color);
+    color: var(--state-light__text-color);
+    border-color: var(--state-light__border-color);
+
+    &:hover,
+    &:active {
+        background-color: var(--state-light__color--hover);
+        color: var(--state-light__text-color--hover);
+        border-color: var(--state-light__border-color--hover);
+    }
+
+    &:focus,
+    &.focus {
+        box-shadow: 0 0 0 var(--focus-width) rgba(var(--color-primary), 0.25);
+    }
+}
+
+.button--primary {
+    background-color: var(--state-primary__color);
+    color: var(--state-primary__text-color);
+    border-color: var(--state-primary__border-color);
+
+    &:hover,
+    &:active {
+        background-color: var(--state-primary__color--hover);
+        color: var(--state-primary__text-color--hover);
+        border-color: var(--state-primary__border-color--hover);
+    }
+
+    &:focus,
+    &.focus {
+        box-shadow: 0 0 0 var(--focus-width) rgba(var(--color-primary), 0.25);
+    }
+}
+
+.button--secondary {
+    background-color: var(--state-secondary__color);
+    color: var(--state-secondary__text-color);
+    border-color: var(--state-secondary__border-color);
+
+    &:hover,
+    &:active {
+        background-color: var(--state-secondary__color--hover);
+        color: var(--state-secondary__text-color--hover);
+        border-color: var(--state-secondary__border-color--hover);
+    }
+
+    &:focus,
+    &.focus {
+        box-shadow: 0 0 0 var(--focus-width) rgba(var(--color-secondary), 0.25);
+    }
+}
+
+.button--tertiary {
+    background-color: var(--state-tertiary__color);
+    color: var(--state-tertiary__text-color);
+    border-color: var(--state-tertiary__border-color);
+
+    &:hover,
+    &:active {
+        background-color: var(--state-tertiary__color--hover);
+        color: var(--state-tertiary__text-color--hover);
+        border-color: var(--state-tertiary__border-color--hover);
+    }
+
+    &:focus,
+    &.focus {
+        box-shadow: 0 0 0 var(--focus-width) rgba(var(--color-tertiary), 0.25);
+    }
+}

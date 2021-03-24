@@ -1,0 +1,30 @@
+@import "heading/heading.css";
+@import "link/link.css";
+@import "paragraph/paragraph.css";
+
+body {
+    font-family: var(--base__font-family);
+    font-size: var(--base__font-size);
+    font-weight: var(--base__font-weight);
+    line-height: var(--base__line-height);
+    text-align: left;
+    color: var(--text-color);
+}
+
+.small,
+small {
+    font-size: var(--base__font-size--small);
+}
+
+b,
+strong {
+    font-weight: var(--base__font-weight--bold);
+}
+
+.text--light {
+    color: var(--text-color--light);
+}
+
+.text--dark {
+    color: var(--text-color--dark);
+}

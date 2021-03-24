@@ -1,0 +1,16 @@
+:root {
+    --gutter-width: 30px;
+
+    /* Breakpoints. */
+    --breakpoint__xs: 0;
+    --breakpoint__sm: 576px;
+    --breakpoint__md: 768px;
+    --breakpoint__lg: 992px;
+    --breakpoint__xl: 1200px;
+
+    /* Max width. */
+    --container-max-width__sm: 540px;
+    --container-max-width__md: 720px;
+    --container-max-width__lg: 960px;
+    --container-max-width__xl: 1140px;
+}

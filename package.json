@@ -1,40 +1,40 @@
 {
   "name": "simple-postcss-framework",
-  "version": "1.2.0",
-  "scripts": {
-    "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development gulp build",
-    "watch": "cross-env NODE_ENV=development gulp watch",
-    "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production gulp production"
+  "version": "2.0.0",
+  "engines": {
+    "node": "<=10.0.0"
   },
-  "dependencies": {
-    "@frctl/fractal": "^1.2.1",
-    "browser-sync": "^2.26.7",
-    "cross-env": "^5.2.0",
+  "scripts": {
+    "fractal": "fractal start --sync",
+    "fractal:build": "fractal build",
+    "dev": "npm run development",
+    "watch:styles": "cross-env-shell postcss src/stylesheet.css --dir dist/css --ext min.css --config postcss.config.js --watch --verbose",
+    "styles": "cross-env-shell postcss src/stylesheet.css --dir dist/css --ext min.css --config postcss.config.js",
+    "fix:styles": "stylelint styleguide/**/*.css --fix --config stylelint.config.js",
+    "development": "cross-env NODE_ENV=development npm-run-all -p -r watch:styles fractal",
+    "build:dev": "cross-env NODE_ENV=development npm-run-all -l styles",
+    "build:prod": "cross-env NODE_ENV=production npm-run-all -l styles"
+  },
+  "devDependencies": {
+    "@frctl/fractal": "^1.5.6",
+    "cross-env": "^7.0.3",
     "cssnano": "^4.1.10",
     "cssnano-preset-advanced": "^4.0.7",
-    "del": "^5.1.0",
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "postcss-calc": "^7.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.8",
+    "postcss-calc": "^8.0.0",
+    "postcss-cli": "^8.3.1",
     "postcss-color-function": "^4.1.0",
-    "postcss-custom-properties": "^8.0.9",
-    "postcss-hexrgba": "^1.0.1",
-    "postcss-import": "^12.0.1",
-    "postcss-nested": "^4.2.1",
+    "postcss-custom-properties": "^11.0.0",
+    "postcss-hexrgba": "^2.0.1",
+    "postcss-import": "^14.0.0",
+    "postcss-nested": "^5.0.5",
     "postcss-partial-import": "^4.1.0",
     "postcss-preset-env": "^6.7.0",
-    "postcss-reporter": "^6.0.1",
-    "prettier": "^1.19.1",
-    "stylelint": "^9.10.1",
-    "stylelint-selector-bem-pattern": "^2.1.0"
+    "postcss-reporter": "^7.0.2",
+    "stylelint": "^13.12.0",
+    "stylelint-config-standard": "^21.0.0"
   },
-  "devDependencies": {},
   "cssnano": {
     "preset": "advanced"
   },
