@@ -7,7 +7,7 @@ module.exports = {
     "color-no-invalid-hex": true,
     "selector-max-class": 4,
     "selector-max-empty-lines": 0,
-    "declaration-no-important": true,
+    "declaration-no-important": null,
     "unit-no-unknown": true,
     "property-no-unknown": [
       true,
