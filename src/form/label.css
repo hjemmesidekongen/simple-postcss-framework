@@ -1,4 +1,3 @@
-label {
-    display: inline-block;
+.form-label {
     margin-bottom: 0.5rem;
 }

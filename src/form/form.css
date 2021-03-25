@@ -4,6 +4,10 @@
 /**
  * Resets.
  */
+label {
+    display: inline-block;
+}
+
 ::-webkit-file-upload-button {
     font: inherit;
     -webkit-appearance: button;
@@ -70,12 +74,6 @@ textarea {
 /**
  * Styles.
  */
-.form-group {
-    &:not(:last-child) {
-        margin-bottom: 1rem;
-    }
-}
-
 .form-text {
     display: block;
     margin-top: 0.25rem;
