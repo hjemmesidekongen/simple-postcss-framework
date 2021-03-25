@@ -9,7 +9,8 @@
       "name": "link",
       "context": {
         "text": "Link button",
-        "url": "#"
+        "url": "#",
+        "role": "button"
       }
     },
     {
