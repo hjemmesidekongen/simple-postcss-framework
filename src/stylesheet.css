@@ -1,5 +1,6 @@
 @import "resets.css";
 @import "variables/variables.css";
+@import "utilities.css";
 @import "grid.css";
 @import "lists.css";
 @import "typography/typography.css";
