@@ -17,6 +17,11 @@ label {
 
 select {
     word-wrap: normal;
+
+    /* Undo the opacity change from Chrome */
+    &:disabled {
+        opacity: 1;
+    }
 }
 
 input,
