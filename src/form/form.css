@@ -1,7 +1,8 @@
 @import "label.css";
 @import "input.css";
 @import "select.css";
-
+@import "check.css";
+@import "validation.css";
 
 /**
  * Resets.

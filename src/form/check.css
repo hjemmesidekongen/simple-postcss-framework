@@ -1,0 +1,69 @@
+.form-check {
+    display: block;
+    min-height: calc(var(--base__font-size) * var(--base__line-height));
+    padding-left: calc(1em + 0.5em);
+    margin-bottom: 0.125rem;
+
+    .form-check-input {
+        float: left;
+        margin-left: calc(calc(1em + 0.5em) * -1);
+    }
+}
+
+.form-check-input {
+    width: 1em;
+    height: 1em;
+    margin-top: 0.25em;
+    vertical-align: top;
+    background-color: var(--form-input__background-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    appearance: none;
+    color-adjust: exact;
+
+    &[type="checkbox"] {
+        border-radius: 0.25em;
+    }
+
+    &[type="radio"] {
+        border-radius: 50%;
+    }
+
+    &:active {
+        filter: brightness(90%);
+    }
+
+    &:focus {
+        border-color: var(--form-input__border-color--focus);
+        outline: 0;
+        box-shadow: 0 0 0 var(--focus-width) rgba(var(--form-input__border-color--focus), 0.25);
+    }
+
+    &:checked {
+        background-color: var(--state-primary__color);
+        border-color: var(--state-primary__border-color);
+
+        &[type="checkbox"] {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+        }
+
+        &[type="radio"] {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+        }
+    }
+
+    &:disabled {
+        pointer-events: none;
+        filter: none;
+        opacity: 0.5;
+    }
+
+    &[disabled],
+    &:disabled {
+        ~ .form-check-label {
+            opacity: 0.5;
+        }
+    }
+}
