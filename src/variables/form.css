@@ -5,6 +5,11 @@
     --form-input__background-color--disabled: #e9ecef;
     --form-input__border-color: var(--state-light__border-color);
     --form-input__border-color--focus: var(--color-primary);
+    --form-input__feedback-color--valid: #198754;
+    --form-input__feedback-color--invalid: #dc3545;
     --form-input__placeholder-color: #999;
     --form-input__height: calc((calc(var(--base__line-height) * 1em)) + calc(var(--spacing__y--base) * 2) + 2px);
+    --form-input__height--inner: calc((calc(var(--base__line-height) * 1em)) + calc(var(--spacing__y--base) * 2));
+    --form-input__height--inner-half: calc((calc(var(--base__line-height) * 0.5em)) + var(--spacing__y--base));
+    --form-input__height--inner-quarter: calc((calc(var(--base__line-height) * 0.25em)) + calc(var(--spacing__y--base) / 2));
 }

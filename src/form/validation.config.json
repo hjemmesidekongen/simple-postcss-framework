@@ -1,0 +1,11 @@
+{
+    "title": "Input",
+    "status": "prototype",
+    "context": {
+        "label": "My text input",
+        "placeholder": "Lorem ipsum dolor sit amet.",
+        "help_text": "Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet",
+        "invalid_text": "Shoot! The element is too long.",
+        "valid_text": "Yes! Thats a valid input."
+    }
+}
