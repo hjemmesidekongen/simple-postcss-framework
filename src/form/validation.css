@@ -1,26 +1,22 @@
 .form-input,
 .form-select,
 .form-check-input {
-    &.form-validation__element--valid {
-        &,
-        &:focus {
-            border-color: var(--form-input__feedback-color--valid);
-        }
-
-        &:focus {
-            box-shadow: 0 0 0 var(--focus-width) rgba(var(--form-input__feedback-color--valid), 0.25);
-        }
+    &.form-validation__element--valid,
+    &.form-validation__element--valid:focus {
+        border-color: var(--form-input__feedback-color--valid);
     }
 
-    &.form-validation__element--invalid {
-        &,
-        &:focus {
-            border-color: var(--form-input__feedback-color--invalid);
-        }
+    &.form-validation__element--valid:focus {
+        box-shadow: 0 0 0 var(--focus-width) rgba(var(--form-input__feedback-color--valid), 0.25);
+    }
 
-        &:focus {
-            box-shadow: 0 0 0 var(--focus-width) rgba(var(--form-input__feedback-color--invalid), 0.25);
-        }
+    &.form-validation__element--invalid,
+    &.form-validation__element--invalid:focus {
+        border-color: var(--form-input__feedback-color--invalid);
+    }
+
+    &.form-validation__element--invalid:focus {
+        box-shadow: 0 0 0 var(--focus-width) rgba(var(--form-input__feedback-color--invalid), 0.25);
     }
 }
 
