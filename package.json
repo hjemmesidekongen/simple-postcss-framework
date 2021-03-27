@@ -1,6 +1,6 @@
 {
   "name": "simple-postcss-framework",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "engines": {
     "node": "<=10.0.0"
   },
@@ -28,7 +28,6 @@
     "postcss-hexrgba": "^2.0.1",
     "postcss-import": "^14.0.0",
     "postcss-nested": "^5.0.5",
-    "postcss-partial-import": "^4.1.0",
     "postcss-preset-env": "^6.7.0",
     "postcss-reporter": "^7.0.2",
     "stylelint": "^13.12.0",

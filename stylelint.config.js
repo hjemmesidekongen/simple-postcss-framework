@@ -9,6 +9,7 @@ module.exports = {
     "selector-max-empty-lines": 0,
     "declaration-no-important": null,
     "unit-no-unknown": true,
+    "function-calc-no-invalid": null,
     "property-no-unknown": [
       true,
       {
