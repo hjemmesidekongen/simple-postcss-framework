@@ -1,9 +1,10 @@
 :root {
     --form-input__text-color: var(--state-light__text-color);
+    --form-input__text-color--disabled: var(--state-light__text-color);
     --form-input__background-color: var(--state-light__color);
+    --form-input__background-color--disabled: #e9ecef;
     --form-input__border-color: var(--state-light__border-color);
     --form-input__border-color--focus: var(--color-primary);
     --form-input__placeholder-color: #999;
-    --form-input__disabled-background-color: #eee;
     --form-input__height: calc((calc(var(--base__line-height) * 1em)) + calc(var(--spacing__y--base) * 2) + 2px);
 }

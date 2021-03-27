@@ -42,19 +42,8 @@
     &:disabled,
     &[readonly] {
         opacity: 1;
-        background-color: var(--form-input__disabled-background-color);
-    }
-}
-
-select.form-input {
-    &:focus::-ms-value {
-        color: var(--text-color);
-        background-color: var(--form-input__background-color);
-    }
-
-    &[size],
-    &[multiple] {
-        height: auto;
+        color: var(--form-input__text-color--disabled);
+        background-color: var(--form-input__background-color--disabled);
     }
 }
 
