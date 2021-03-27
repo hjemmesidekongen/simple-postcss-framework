@@ -1,0 +1,43 @@
+.form-select {
+    display: block;
+    width: 100%;
+    padding: var(--spacing__y--base) var(--spacing__x--base);
+    font-family: var(--base__font-family);
+    font-size: var(--base__font-size);
+    line-height: var(--base__line-height);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--form-input__border-color);
+    border-radius: var(--border__radius--base);
+    color: var(--form-input__text-color);
+    background-color: var(--form-input__background-color);
+    background-repeat: no-repeat;
+    background-size: 16px 12px;
+    background-position: right var(--spacing__x--base) center;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    appearance: none;
+    transition: border var(--transition__time) var(--transition--easeInOutSine), box-shadow var(--transition__time) var(--transition--easeInOutSine);
+
+    &:focus {
+        outline: 0;
+        border-color: var(--form-input__border-color--focus);
+        box-shadow: 0 0 0 var(--focus-width) rgba(var(--form-input__border-color--focus), 0.25);
+    }
+
+    &[multiple],
+    &[size]:not([size="1"]) {
+        padding-right: var(--spacing__x--base);
+        background-image: none;
+    }
+
+    &:disabled {
+        color: var(--form-input__text-color--disabled);
+        background-color: var(--form-input__background-color--disabled);
+    }
+
+    /* Remove outline from select box in FF. */
+    &:-moz-focusring {
+        color: transparent;
+        text-shadow: 0 0 0 var(--form-input__text-color);
+    }
+}
