@@ -1,4 +1,4 @@
-<div class="mb-3">
+<div class="margin-bottom--3">
     <label for="myTextInput" class="form-label">
         {{ label }} <span class="required">*</span>
     </label>
@@ -9,4 +9,35 @@
     <small id="inputHelpBlock" class="form-text text--light">
         {{ help_text }}
     </small>
+</div>
+
+<h2>Disabled form</h2>
+<div class="margin-bottom--3">
+    <label for="myTextInput" class="form-label">
+        Disabled <span class="required">*</span>
+    </label>
+
+    <input class="form-input" disabled name="my-input" id="myTextInput" placeholder="{{ placeholder }}"
+        aria-describedby="inputHelpBlock" />
+
+    <small id="inputHelpBlock" class="form-text text--light">
+        {{ help_text }}
+    </small>
+</div>
+
+<h2>Inline form</h2>
+<div class="row gutter--3 align-items--center">
+    <div class="col-auto">
+        <label for="inputPassword6" class="col-form-label">Password</label>
+    </div>
+
+    <div class="col-auto">
+        <input type="password" id="inputPassword6" class="form-input" aria-describedby="passwordHelpInline">
+    </div>
+
+    <div class="col-auto">
+        <small id="passwordHelpInline" class="form-text text--light">
+            {{ help_text }}
+        </small>
+    </div>
 </div>
