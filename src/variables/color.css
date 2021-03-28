@@ -27,6 +27,9 @@
     --color-tertiary: #28a745;
     --color-tertiary--light: color(var(--color-tertiary) tint(10%));
     --color-tertiary--dark: color(var(--color-tertiary) shade(10%));
+    --color-quaternary: #e01a33;
+    --color-quaternary--light: color(var(--color-quaternary) tint(10%));
+    --color-quaternary--dark: color(var(--color-quaternary) shade(10%));
 
     /* State. */
     --state-light__color: #fff;
@@ -73,5 +76,17 @@
     --state-tertiary__border-color--hover:
         color(
             var(--state-tertiary__color--hover) shade(10%)
+        );
+    --state-quaternary__color: var(--color-quaternary);
+    --state-quaternary__text-color: #fff;
+    --state-quaternary__border-color:
+        color(
+            var(--state-quaternary__color) shade(10%)
+        );
+    --state-quaternary__color--hover: color(var(--color-quaternary) shade(15%));
+    --state-quaternary__text-color--hover: #fff;
+    --state-quaternary__border-color--hover:
+        color(
+            var(--state-quaternary__color--hover) shade(10%)
         );
 }

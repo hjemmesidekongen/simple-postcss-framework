@@ -1,11 +1,6 @@
 /**
- * Variables.
- */
-
-/**
  * Resets.
  */
-
 button {
     border-radius: 0;
 
@@ -154,5 +149,23 @@ a.button {
     &:focus,
     &.focus {
         box-shadow: 0 0 0 var(--focus-width) rgba(var(--color-tertiary), 0.25);
+    }
+}
+
+.button--quaternary {
+    background-color: var(--state-quaternary__color);
+    color: var(--state-quaternary__text-color);
+    border-color: var(--state-quaternary__border-color);
+
+    &:hover,
+    &:active {
+        background-color: var(--state-quaternary__color--hover);
+        color: var(--state-quaternary__text-color--hover);
+        border-color: var(--state-quaternary__border-color--hover);
+    }
+
+    &:focus,
+    &.focus {
+        box-shadow: 0 0 0 var(--focus-width) rgba(var(--color-quaternary), 0.25);
     }
 }
