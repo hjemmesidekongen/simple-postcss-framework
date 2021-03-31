@@ -44,6 +44,14 @@
     margin-left: calc((0 - var(--gutter-width)) / 2);
 }
 
+.row--equal-height-columns {
+    > * {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+}
+
 /**
  * Columns.
  */
