@@ -34,10 +34,16 @@ body {
     outline: 0 !important;
 }
 
+hr:not([size]) {
+    height: 1px;
+}
+
 hr {
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
+    margin: 1rem 0;
+    color: inherit;
+    background-color: currentColor;
+    border: 0;
+    opacity: 0.25;
 }
 
 img {
