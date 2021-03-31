@@ -21,6 +21,22 @@ strong {
     font-weight: var(--base__font-weight--bold);
 }
 
+.text--primary {
+    color: var(--color-primary);
+}
+
+.text--secondary {
+    color: var(--color-secondary);
+}
+
+.text--tertiary {
+    color: var(--color-tertiary);
+}
+
+.text--quaternary {
+    color: var(--color-quaternary);
+}
+
 .text--light {
     color: var(--text-color--light);
 }
