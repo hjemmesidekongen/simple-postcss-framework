@@ -1,6 +1,7 @@
 ol,
 ul,
 dl {
+    max-width: 66ch;
     margin-top: 0;
     margin-bottom: 1rem;
 }
@@ -10,4 +11,17 @@ ul ul,
 ol ul,
 ul ol {
     margin-bottom: 0;
+}
+
+.list--inline {
+    padding-left: 0;
+    list-style: none;
+
+    > li {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 0.5rem;
+        }
+    }
 }

@@ -1,0 +1,44 @@
+.alert {
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+    border-radius: var(--border__radius--base);
+    border-style: solid;
+    border-width: 1px;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong {
+        color: inherit;
+    }
+}
+
+/**
+ * Variants.
+ */
+.alert--warning {
+    color: color(var(--alert__color--warning) shade(40%));
+    border-color: color(var(--alert__color--warning) tint(70%));
+    background-color: color(var(--alert__color--warning) tint(80%));
+}
+
+.alert--danger {
+    color: color(var(--alert__color--danger) shade(40%));
+    border-color: color(var(--alert__color--danger) tint(70%));
+    background-color: color(var(--alert__color--danger) tint(80%));
+}
+
+.alert--information {
+    color: color(var(--alert__color--information) shade(40%));
+    border-color: color(var(--alert__color--information) tint(70%));
+    background-color: color(var(--alert__color--information) tint(80%));
+}
+
+.alert--success {
+    color: color(var(--alert__color--success) shade(40%));
+    border-color: color(var(--alert__color--success) tint(70%));
+    background-color: color(var(--alert__color--success) tint(80%));
+}

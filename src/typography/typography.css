@@ -44,3 +44,15 @@ strong {
 .text--dark {
     color: var(--text-color--dark);
 }
+
+.text-align--center {
+    text-align: center;
+}
+
+.text-align--left {
+    text-align: left;
+}
+
+.text-align--right {
+    text-align: right;
+}

@@ -1,0 +1,6 @@
+:root {
+    --alert__color--danger: #dc3545;
+    --alert__color--warning: #ffc107;
+    --alert__color--success: #198754;
+    --alert__color--information: #0dcaf0;
+}

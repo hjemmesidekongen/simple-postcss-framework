@@ -23,6 +23,10 @@ h6 {
     }
 }
 
+span.heading {
+    display: block;
+}
+
 h1,
 .heading--h1 {
     font-size: var(--heading__font-size--h1);

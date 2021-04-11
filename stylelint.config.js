@@ -17,7 +17,7 @@ module.exports = {
       }
     ],
     "selector-max-id": 0,
-    "unit-allowed-list": ["em", "rem", "%", "s", "px", "deg", "vh", "ms", "vw", "fr"],
+    "unit-allowed-list": ["em", "rem", "%", "s", "px", "deg", "vh", "ms", "vw", "fr", "ch"],
     "indentation": 4,
     "selector-pseudo-class-no-unknown": true,
     "max-empty-lines": [
